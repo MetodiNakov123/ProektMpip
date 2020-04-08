@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Kviz/QuizApp-Android/QuizApp-Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Mpip proekti/MyPetApplicationFinal/MyPetApplicationFinal/MyPetAplication" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/New folder/MyPetApplicationFinal/MyPetApplicationFinal/MyPetAplication" vcs="Git" />
