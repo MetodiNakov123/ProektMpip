@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proekt Mpip</string>
+    <string name="intro_first_line">The Easy shopping solution</string>
+    <string name="intro_second_line">Shop is in your hand now!</string>
+    <string name="btn_login">User Login Here</string>
+    <string name="btn_user_signup">New User? Register here</string>
+</resources>
