@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -15,6 +17,8 @@ public class ShopActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     TextView emailText;
     Button btnSignOut;
+
+    ViewFlipper imgBanner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +29,10 @@ public class ShopActivity extends AppCompatActivity {
         btnSignOut = findViewById(R.id.btn_signOut);
 
         mAuth = FirebaseAuth.getInstance();
-        if (mAuth.getCurrentUser() != null){
-            String EMAIL= mAuth.getCurrentUser().getEmail();
+        if (mAuth.getCurrentUser() != null) {
+            String EMAIL = mAuth.getCurrentUser().getEmail();
             int posET = EMAIL.indexOf("@");
-            emailText.setText("Здраво, " + EMAIL.substring(0,posET));
+            emailText.setText("Здраво, " + EMAIL.substring(0, posET));
 
         }
 
@@ -42,7 +46,26 @@ public class ShopActivity extends AppCompatActivity {
         });
 
 
+        imgBanner = findViewById(R.id.imgBanner);
+        int sliders[] = {
+                R.drawable.banner1, R.drawable.banner2, R.drawable.banner3
+        };
 
-
+        for (int slide : sliders) {
+            bannerFliper(slide);
+        }
     }
+
+    public void bannerFliper(int image){
+         ImageView imageView = new ImageView(this);
+         imageView.setImageResource(image);
+         imgBanner.addView(imageView);
+         imgBanner.setFlipInterval(5000);
+         imgBanner.setAutoStart(true);
+         imgBanner.setInAnimation(this, android.R.anim.fade_in);
+         imgBanner.setOutAnimation(this, android.R.anim.fade_out);
+    }
+
+
+
 }
