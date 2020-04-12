@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/shop_logo"
             android:layout_gravity="center"
-            android:layout_marginTop="50sp"
+            android:layout_marginTop="45sp"
             />
 
         <TextView
@@ -30,7 +30,7 @@
             android:textAllCaps="true"
             android:textAlignment="center"
             android:textColor="@color/colorDarkRed"
-            android:layout_marginTop="70sp"
+            android:layout_marginTop="67sp"
             android:layout_marginBottom="10dp"
             />
 
