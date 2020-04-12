@@ -168,7 +168,7 @@ public class AddProductActivity extends AppCompatActivity {
     private void upload(){
 
         if(imgUrl != null){
-            final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()+"."+getFileExtension(imgUrl));
+            final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()+"."+getFileExtension(imgUrl)); //786949049.jpg
 
             mUploadTask = fileReference.putFile(imgUrl)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -183,6 +183,8 @@ public class AddProductActivity extends AppCompatActivity {
                             }, 500);
                             Toast.makeText(AddProductActivity.this, "Upload successfully", Toast.LENGTH_LONG).show();
 
+
+                            // zacuvuvanje vo Firebase Database
                             fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
