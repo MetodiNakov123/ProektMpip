@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Proekt Mpip</string>
+    <string name="app_name">eShop</string>
     <string name="intro_first_line">Најлесно shopping решение</string>
     <string name="intro_second_line">Сега пазарувањето е во ваши раце!</string>
     <string name="btn_login">Најава на корисник</string>
@@ -17,7 +17,7 @@
     <string name="btn_register">Регистрирај се</string>
     <string name="popular_products">Продукти</string>
     <string name="choise_image">Избери слика</string>
-    <string name="upload">Додај продукт   </string>
+    <string name="upload">Додај</string>
     <string name="product_title">Внеси име на продуктот</string>
     <string name="product_price">Внеси цена на продуктот</string>
 

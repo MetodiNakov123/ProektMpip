@@ -29,6 +29,7 @@ public class ShopActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     TextView emailText;
     Button btnSignOut;
+    Button btnAddProduct;
 
     ViewFlipper imgBanner;
 
@@ -46,6 +47,7 @@ public class ShopActivity extends AppCompatActivity {
 
         emailText = findViewById(R.id.textEmail);
         btnSignOut = findViewById(R.id.btn_signOut);
+        btnAddProduct = findViewById(R.id.btn_addProduct);
 
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
@@ -64,6 +66,15 @@ public class ShopActivity extends AppCompatActivity {
             }
         });
 
+
+        btnAddProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ShopActivity.this, AddProductActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         imgBanner = findViewById(R.id.imgBanner);
         int sliders[] = {
