@@ -93,6 +93,18 @@
         />
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/prPrice"
+        android:id="@+id/txtError"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorRed"
+        />
+
+
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
