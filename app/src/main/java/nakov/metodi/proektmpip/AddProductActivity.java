@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -49,6 +50,8 @@ public class AddProductActivity extends AppCompatActivity {
 
     private StorageTask mUploadTask;
 
+    private FirebaseAuth mAuth;
+
 
 
     @Override
@@ -69,7 +72,7 @@ public class AddProductActivity extends AppCompatActivity {
         mStorageRef = FirebaseStorage.getInstance().getReference("products");
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Products");
 
-
+        mAuth = FirebaseAuth.getInstance();
 
 
 
@@ -184,7 +187,8 @@ public class AddProductActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Uri uri) {
                                     String url = uri.toString();
-                                    Product product = new Product(url,prPrice.getText().toString().trim(), prTitle.getText().toString().trim());
+                                    String userEmail = mAuth.getCurrentUser().getEmail();
+                                    Product product = new Product(url,prPrice.getText().toString().trim(), prTitle.getText().toString().trim(), userEmail);
                                     String uploadID = mDatabaseRef.push().getKey();
                                     mDatabaseRef.child(uploadID).setValue(product);
                                 }

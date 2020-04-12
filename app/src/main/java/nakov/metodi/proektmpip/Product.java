@@ -13,13 +13,17 @@ public class Product {
     @SerializedName("product_title")
     private String product_title;
 
+    @SerializedName("user_email")
+    private String user_email;
+
     public Product() {
     }
 
-    public Product(String product_image, String product_price, String product_title) {
+    public Product(String product_image, String product_price, String product_title, String user_email) {
         this.product_image = product_image;
         this.product_price = product_price;
         this.product_title = product_title;
+        this.user_email = user_email;
     }
 
 
@@ -45,5 +49,13 @@ public class Product {
 
     public void setProduct_title(String product_title) {
         this.product_title = product_title;
+    }
+
+    public String getUser_email() {
+        return user_email;
+    }
+
+    public void setUser_email(String user_email) {
+        this.user_email = user_email;
     }
 }
