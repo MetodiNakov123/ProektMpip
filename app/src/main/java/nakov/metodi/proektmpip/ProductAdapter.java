@@ -45,7 +45,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ImageVie
                 .placeholder(R.drawable.ic_image_black_24dp)
                 .fit()
                 .centerCrop()
-                .into((Target)imageViewHolder.prod_img);
+                .into(imageViewHolder.prod_img);
     }
 
     @Override

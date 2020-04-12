@@ -97,28 +97,28 @@ public class ShopActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         mProducts = new ArrayList<>();
-//        mDatabaseRef = FirebaseDatabase.getInstance().getReference("popular");
-//        mDatabaseRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                for(DataSnapshot postSnapshot:dataSnapshot.getChildren()){
-//                    Product product = postSnapshot.getValue(Product.class);
-//                    mProducts.add(product);
-//                }
-//
-//                mAdapter = new ProductAdapter(ShopActivity.this, mProducts);
-//                mRecyclerView.setAdapter(mAdapter);
-//            }
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Products");
+        mDatabaseRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for(DataSnapshot postSnapshot:dataSnapshot.getChildren()){
+                    Product product = postSnapshot.getValue(Product.class);
+                    mProducts.add(product);
+                }
 
-            mProducts.add(new Product("gs://mpipproekt.appspot.com/popular/televizor.jpg", "$300", "TV"));
-            mAdapter = new ProductAdapter(ShopActivity.this, mProducts);
-            mRecyclerView.setAdapter(mAdapter);
+                mAdapter = new ProductAdapter(ShopActivity.this, mProducts);
+                mRecyclerView.setAdapter(mAdapter);
+            }
+
+//            mProducts.add(new Product("gs://mpipproekt.appspot.com/popular/televizor.jpg", "$300", "TV"));
+//            mAdapter = new ProductAdapter(ShopActivity.this, mProducts);
+//            mRecyclerView.setAdapter(mAdapter);
 //
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//                Toast.makeText(ShopActivity.this, databaseError.getMessage(), Toast.LENGTH_LONG).show();
-//            }
-//        });
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(ShopActivity.this, databaseError.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 }

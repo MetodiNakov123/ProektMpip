@@ -1,21 +1,21 @@
 <resources>
     <string name="app_name">Proekt Mpip</string>
-    <string name="intro_first_line">The Easy shopping solution</string>
-    <string name="intro_second_line">Shop is in your hand now!</string>
-    <string name="btn_login">User Login Here</string>
-    <string name="btn_user_signup">New User? Register here</string>
-    <string name="enter_email">Enter email</string>
-    <string name="enter_password">Enter Password</string>
-    <string name="user_login">USER LOGIN</string>
-    <string name="registration_message">New User Registration</string>
-    <string name="first_name">First name</string>
-    <string name="last_name">Last name</string>
-    <string name="email_address">Email address</string>
-    <string name="password">Password</string>
-    <string name="confirm_password">Confirm password</string>
-    <string name="contact_number">Contact number</string>
-    <string name="btn_register">Register</string>
-    <string name="popular_products">Popular Products</string>
+    <string name="intro_first_line">Најлесно shopping решение</string>
+    <string name="intro_second_line">Сега пазарувањето е во ваши раце!</string>
+    <string name="btn_login">Најава на корисник</string>
+    <string name="btn_user_signup">Нов корисник? Регистрирај се!</string>
+    <string name="enter_email">Внеси емаил</string>
+    <string name="enter_password">Внеси лозинка</string>
+    <string name="user_login">Најава на корисник</string>
+    <string name="registration_message">Регистрација на нов корисник</string>
+    <string name="first_name">Име</string>
+    <string name="last_name">Презиме</string>
+    <string name="email_address">Емаил</string>
+    <string name="password">Лозинка</string>
+    <string name="confirm_password">Потврди лозинка</string>
+    <string name="contact_number">Телефон за контакт</string>
+    <string name="btn_register">Регистрирај се</string>
+    <string name="popular_products">Продукти</string>
     <string name="browse_category">Browser Category</string>
 
 </resources>

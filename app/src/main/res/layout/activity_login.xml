@@ -31,7 +31,7 @@
             android:textAllCaps="true"
             android:textAlignment="center"
             android:textColor="@color/colorDarkRed"
-            android:layout_marginTop="50sp"
+            android:layout_marginTop="45sp"
             android:layout_marginBottom="15sp"
             />
 
@@ -80,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:text="@string/user_login"
+            android:text="Најави се"
             android:background="@drawable/btnloginbg"
             android:textColor="@color/colorWhite"
             android:textSize="20sp"
@@ -89,7 +89,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Or"
+            android:text="Или"
             android:textSize="22sp"
             android:textAllCaps="true"
             android:textAlignment="center"

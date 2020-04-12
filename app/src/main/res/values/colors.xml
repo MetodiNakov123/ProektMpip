@@ -8,4 +8,5 @@
     <color name="bgStart">#f3f3f3</color>
     <color name="bgEnd">#dbdbdb</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDarkGreen">#013208</color>
 </resources>
