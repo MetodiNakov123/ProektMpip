@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Додај производ"
+        android:id="@+id/txtUploadeImage"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choiseImage"
+        android:text="@string/choise_image"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtUploadeImage"
+        android:drawableLeft="@drawable/ic_camera"
+        />
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/choiseImage"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGray"
+        android:src="@drawable/ic_photo2"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadProgress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/imgPreview"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Име на продуктот"
+        android:layout_below="@id/uploadProgress"
+        android:id="@+id/txtName"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prTitle"
+        android:layout_below="@id/txtName"
+        android:hint="@string/product_title"
+        android:layout_marginLeft="13dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Цена на продуктот"
+        android:layout_below="@id/prTitle"
+        android:id="@+id/txtPrice"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prPrice"
+        android:layout_below="@id/txtPrice"
+        android:hint="@string/product_price"
+        android:layout_marginLeft="13dp"
+        />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUploadImage"
+        android:text="@string/upload"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/icon_upload"
+        android:background="@color/colorDarkGreen"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Види продукти"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+
+
+</RelativeLayout>

@@ -9,4 +9,5 @@
     <color name="bgEnd">#dbdbdb</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorDarkGreen">#013208</color>
+    <color name="colorGray">#DCDCDC</color>
 </resources>

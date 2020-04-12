@@ -16,6 +16,10 @@
     <string name="contact_number">Телефон за контакт</string>
     <string name="btn_register">Регистрирај се</string>
     <string name="popular_products">Продукти</string>
-    <string name="browse_category">Browser Category</string>
+    <string name="choise_image">Избери слика</string>
+    <string name="upload">Додај продукт   </string>
+    <string name="product_title">Внеси име на продуктот</string>
+    <string name="product_price">Внеси цена на продуктот</string>
+
 
 </resources>
