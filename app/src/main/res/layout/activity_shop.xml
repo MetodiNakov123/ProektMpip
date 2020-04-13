@@ -62,7 +62,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="7dp"
                     android:orientation="horizontal"
                     >
 
@@ -81,13 +81,23 @@
 
 
 
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_circle"
+            android:layout_marginLeft="151dp"
+        />
+
+
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_addProduct"
             android:text="Додај продукт"
 
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="7dp"
             android:background="@color/colorDarkGreen"
             android:textColor="@color/colorWhite"
             />

@@ -7,66 +7,75 @@
     android:background="@drawable/screenbg"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10sp"
-        android:orientation="vertical"
-        >
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/shop_logo"
-            android:layout_gravity="center"
-            android:layout_marginTop="45sp"
-            />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/intro_first_line"
-            android:textSize="22sp"
-            android:textAllCaps="true"
-            android:textAlignment="center"
-            android:textColor="@color/colorDarkRed"
-            android:layout_marginTop="67sp"
-            android:layout_marginBottom="10dp"
-            />
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:orientation="vertical"
+            >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/intro_second_line"
-            android:textSize="20sp"
-            android:textColor="@color/colorRed"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            />
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shop_logo"
+                android:layout_gravity="center"
+                android:layout_marginTop="45sp"
+                />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btnloginbg"
-            android:layout_marginTop="70sp"
-            android:text="@string/btn_login"
-            android:textSize="18sp"
-            android:textColor="@color/colorWhite"
-            android:id="@+id/btnUserLogin"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_first_line"
+                android:textSize="22sp"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkRed"
+                android:layout_marginTop="67sp"
+                android:layout_marginBottom="10dp"
+                />
 
-        <Button
-            android:id="@+id/btnUserSignup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btnsignupbg"
-            android:layout_marginTop="20sp"
-            android:textSize="18sp"
-            android:text="@string/btn_user_signup"
-            android:textColor="@color/colorWhite"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_second_line"
+                android:textSize="20sp"
+                android:textColor="@color/colorRed"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnloginbg"
+                android:layout_marginTop="70sp"
+                android:text="@string/btn_login"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btnUserLogin"
+                />
+
+            <Button
+                android:id="@+id/btnUserSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnsignupbg"
+                android:layout_marginTop="20sp"
+                android:textSize="18sp"
+                android:text="@string/btn_user_signup"
+                android:textColor="@color/colorWhite"/>
 
 
-    </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
 
 
 

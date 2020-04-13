@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
@@ -39,6 +40,7 @@ public class ShopActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseRef;
     private List<Product> mProducts;
 
+    private ProgressBar mProgressCircle;  //Added ProgressBar showProducts
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,8 @@ public class ShopActivity extends AppCompatActivity {
         emailText = findViewById(R.id.textEmail);
         btnSignOut = findViewById(R.id.btn_signOut);
         btnAddProduct = findViewById(R.id.btn_addProduct);
+
+        mProgressCircle = findViewById(R.id.progress_circle);
 
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
@@ -119,6 +123,8 @@ public class ShopActivity extends AppCompatActivity {
 
                 mAdapter = new ProductAdapter(ShopActivity.this, mProducts);
                 mRecyclerView.setAdapter(mAdapter);
+
+                mProgressCircle.setVisibility(View.INVISIBLE);
             }
 
 //            mProducts.add(new Product("gs://mpipproekt.appspot.com/popular/televizor.jpg", "$300", "TV"));
@@ -128,6 +134,8 @@ public class ShopActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(ShopActivity.this, databaseError.getMessage(), Toast.LENGTH_LONG).show();
+
+                mProgressCircle.setVisibility(View.INVISIBLE);
             }
         });
     }
