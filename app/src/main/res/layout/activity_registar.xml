@@ -7,6 +7,11 @@
     android:background="@drawable/screenbg"
     tools:context=".RegistarActivity">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -190,5 +195,8 @@
             android:background="@drawable/btnloginbg"
             />
     </LinearLayout>
+
+
+    </ScrollView>
 
 </LinearLayout>
